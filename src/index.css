@@ -69,7 +69,8 @@ nav a{
 @media(max-width:995px)
 {
   header{
-    display: none;
+    display:flex;
+    position: relative;
   }
   .typing-text{
   display: none;

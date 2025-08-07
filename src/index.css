@@ -19,8 +19,8 @@ body{
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
-  background-color: black;
   color: white;
+  background: "";
 }
 header{
   position: fixed;
@@ -28,7 +28,8 @@ header{
   left: 0;
   width: 100%;
   padding: 1rem 9%;
-  background-color:beige;
+  background-color:beige ;
+  opacity: 50%;
   filter: drop-shadow(10px);
   display: flex;
   justify-content: space-between;
@@ -119,7 +120,6 @@ section{
   justify-content: center;
   align-items: center;
   gap:8rem;
-  background-color: black;
 }
 .home .home-content h1{
   font-size: 5rem;
@@ -206,11 +206,11 @@ span{
 }
 .typing-text span::after{
   content: "";
-  background-color: black;
+  background-color: transparent;
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  border-left: 3px solid black;
+  border-left: 3px solid rgb(255, 250, 250);
   right: -8;
   animation: cursor 0.6s infinite;
 }
@@ -316,7 +316,7 @@ span{
 }
 
 .timeline-dot {
-  height: 21px;
+  height: 21px; 
   width: 21px;
   background-color: teal;
   box-shadow: 0 0 25px teal, 0 0 50px teal;
@@ -552,13 +552,13 @@ span{
 
 #highlights {
   padding: 2rem;
-  background-color: black
 }
 
 .highlight-marquee {
   overflow: hidden;
   position: relative;
   width: 100%;
+
 }
 
 .highlight-track {
@@ -671,4 +671,21 @@ span{
   font-size: 2rem;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 128, 128, 0.3);
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 1; /* optional */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white; /* ensure your text is visible */
 }

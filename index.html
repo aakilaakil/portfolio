@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/Aahil Logo.jpeg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./src/index.css">
+    <title>Portfolio Aahil</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>(function() {emailjs.init("vL9rE2Tj2nQPajgt8"); })();</script> 
+  </head>
+
+<body>
+<header>
+      <a href="#" class="logo" >Mohamed Aahil M</a>
+      <nav>
+        <a href="#home" class ='active' >Home</a>
+        <a href="#Education">Education</a>
+        <a href="#pro">Projects</a>
+        <a href="#Skill">Skill</a>
+        <a href="#Contact">Contact</a>
+       <a href="./src/assets/Mohamed_Aahil_Resume.pdf" download class="nav-link"> Download CV</a>
+      </nav>  
+</header>
+
+<section class="home" id="home">
+      <div class="home-img"><img src="./src/assets/Naan.jpg"></div>
+      <div class="home-content">
+        <h1>Hi , Its <span>Mohamed Aahil M</span> </h1>
+        <h3 class="typing-text">I am <span></span></h3>
+        <p>
+          I am a passionate Embedded Programmer with hands-on experience in microcontrollers and real-time systems. I also specialize in HTML & CSS web design, crafting responsive and interactive interfaces. As a problem solver in Mechatronics, I enjoy integrating mechanical systems with smart control and automation. I'm also skilled in 3D designing, using CAD tools to model and visualize functional components for real-world applications. My work blends electronics, coding, design, and mechanics to create efficient, innovative solutions.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/mohamed-aahil-m-062b11257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class ="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/aakilaakil"><i class ="fa-brands fa-github"></i></a>
+          <a href="#"><i class ="fa-brands fa-instagram"></i></a>
+          <a href="https://leetcode.com/u/mohamed_aahil_m/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="width:30px; height:30px;"></a>
+        </div>
+        <a href="#" class="button">Hire Me</a>
+</div></section>
+
+<section id="Education" class="Education">
+          <h1 class="head2">EDUCATION</h1>
+          <div class="timeline-items">
+
+
+            <div class="timeline-item">
+              <div class="timeline-dot"> </div>
+                <div class="timeline-date">2022-2026</div>
+                <div class="timeline-content">
+                  <h3>Bachelors in Mechatronics Engineering</h3>
+                  <ul class="left-list">
+                  <li>Studying at Kongu Engineering College with a CGPA of 8.12</li>
+                  <li>Pursuing Honours Degree in Intelligent Automation Systems</li>
+                  <Li>Led interdisciplinary projects involving ML, IoT, and automation</Li>
+                  </ul>
+                </div>
+            </div>
+
+              <div class="timeline-item">
+              <div class="timeline-dot"></div>
+                <div class="timeline-date">2021-2022</div>
+                <div class="timeline-content">
+                  <h3>Higher Secondary Education</h3>
+                  <P>
+                    <ul class="left-list">
+                  <li>Completed HSC at Erode Hindu Kalvi Nilayam with 84.16%</li>
+                  <li>My Higher Secondary years Helped build the Foundation of My Technical Intrests</li>
+                  <Li>Sparked my early interest in 3D designing and Web Development</Li>
+                  </ul>
+                  </P>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+                <div class="timeline-date">2019-2020</div>
+                <div class="timeline-content">
+                  <h3>Secondary School Leaving Certificate</h3>
+                  <P>
+                  <ul class="left-list">
+                  <li>Graduated from Erode Hindu Kalvi Nilaiyam with 64.12%</li>
+                  <li>Excelled in science and math, laying the groundwork for engineering</li>
+                  <Li>It Built my Confidence and Opened the Door to my Journey in Engineering</Li>
+                  </ul>
+                  </P>
+                </div>              
+            </div>
+            
+          </div>
+</section>
+
+<section id="pro">
+  <h1 class="head2">PROJECTS</h1>
+
+<div class="project-container">
+  <div class="project-item"><img src="./src/assets/E-pole.jpg" alt=""><span>E-Pole Fall Detection</span>
+  <button class="view-btn" onclick="openPopup(1)">View Details</button>
+  </div>
+
+  <div class="project-item"><img src="./src/assets/SolidManure.png" alt="Not Found"><span>Solid Manure Dispenser</span>
+  <button class="view-btn" onclick="openPopup(2)">View Details</button>
+  </div>
+
+  <div class="project-item"><img src="" alt="Not Found"><span>Human Rescue Bot from Borewells</span>
+  <button class="view-btn" onclick="openPopup(3)">View Details</button>
+  </div>
+
+  <div class="project-item"><img src="" alt="Not Found"><span>Reed Mat Cleaning Machine</span>
+  <button class="view-btn" onclick="openPopup(4)">View Details</button>
+  </div>
+
+  <div class="project-item"><img src="./src/assets/Port.png" alt="Not Found"><span>Personal Portfolio</span>
+  <button class="view-btn" onclick="openPopup(5)">View Details</button>
+  </div>
+</div>
+
+
+<!--Popup of E-Pole -->
+<div class="popup-box" id="popup1">
+  <div class="popup-content">
+  <span class="close-btn" onclick="closePopup()">×</span><h3>E-Pole Fall Detection</h3>
+  <img src="./src/assets/E-pole.jpg" alt="" class="popup-img">
+  <p>This project was developed for the E-Yantra 2023 Innovation Challenge under the Disaster Management sector. It focuses on monitoring the orientation of electric poles using an MPU-based accelerometer sensor. When a pole begins to tilt or shows signs of falling, the system immediately triggers alerts to the concerned authorities. A responsive real-time dashboard was also built to visualize and track pole orientation remotely.</p>
+  </div>
+</div>
+
+<!-- Popup of SMD -->
+<div class="popup-box" id="popup2">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <h3>Solid Manure Dispenser</h3>
+    <img src="./src/assets/SolidManure.png" alt="" class="popup-img">
+    <p>A machine designed to dispense solid manure uniformly in farmlands.</p>
+  </div>
+</div>
+
+<!-- Popup of BOT  -->
+<div class="popup-box" id="popup3">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <h3>Human Rescue Bot</h3>
+    <img src="./src/assets/RescueBot.jpg" alt="" class="popup-img">
+    <p>A robotic system to rescue kids from borewells with live monitoring.</p>
+  </div>
+</div>
+
+<!-- Popup Reed Mat -->
+<div class="popup-box" id="popup4">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <h3>Reed Mat Cleaning Machine</h3>
+    <img src="./src/assets/ReedMat.jpg" alt="" class="popup-img">
+    <p>Automated washing & drying of reed mats using motorized brushes and conveyor.</p>
+  </div>
+</div>
+
+<!-- Portfolio -->
+<div class="popup-box" id="popup5">
+  <div class="popup-content">
+  <span class="close-btn" onclick="closePopup()">×</span>
+  <h3>Personal Portfolio</h3>
+  <img src="./src/assets/Port.png" alt="" class="popup-img">
+  <p>This website showcases my work, skills, and projects with responsive design.</p>
+  </div>
+</div>
+
+</section>
+
+<section id="Skill" class="skills-section">
+        <h1 class="head2">SKILLS</h1>
+        <div class="skills-image-container">
+    <div class="skill-item"><img src="./src/assets/HTML.png" alt="HTML"><span>HTML</span></div>
+    <div class="skill-item"><img src="./src/assets/CSS.webp" alt="CSS"><span>CSS</span></div>
+    <div class="skill-item"><img src="./src/assets/java.webp" alt="Java"><span>Java</span></div>
+    <div class="skill-item"><img src="./src/assets/C.webp" alt="C - Programming"><span>C</span></div>
+    <div class="skill-item"><img src="./src/assets/SolidWorks.webp" alt="Solid Works"><span>Solid Works</span></div>
+    <div class="skill-item"><img src="./src/assets/AUTOCAD.png" alt="AutoCAD"><span>AutoCAD</span></div>
+    <div class="skill-item"><img src="./src/assets/EAGLE.webp" alt="EAGLE"><span>EAGLE</span></div>
+    <div class="skill-item"><img src="./src/assets/Protues.png" alt="Protues"><span>Proteus</span></div>
+        </div>
+        
+        
+</section>
+
+<section id="highlights">
+  <h1 class="head2">HIGHLIGHTS</h1>
+
+  <div class="highlight-marquee">
+    <div class="highlight-track">
+
+<!--CSWA  -->
+      <div class="highlight-card">
+        <img src="./src/assets/CSWA.png" alt="CSWA Certification" />
+        <div class="highlight-content">
+          <h3>CSWA Certified</h3>
+          <p>Completed International SolidWorks CAD Design Assosiate Examination From Dassaults Systems</p>
+        </div>
+      </div>
+
+<!--HONOURS-->
+      <div class="highlight-card">
+        <img src="./src/assets/HONS.png" alt="Honours" />
+        <div class="highlight-content">
+          <h3>Degree With Area of Specialization</h3>
+          <p>Prsuing BE - Mechatronics Engineering with Honours in Area of Intelligent Automation Systems</p>
+        </div>
+      </div>
+<!--PCB  -->
+      <div class="highlight-card">
+        <img src="./src/assets/PCB.jpeg" alt="pcb" />
+        <div class="highlight-content">
+          <h3>PCB Design and Manufacturing</h3>
+          <p>Completed Design and Fabrication of PCB Manufacturing and Assembeled SMD Components With Mentoring From a Inustrial Expert</p>
+        </div>
+      </div>
+<!--CSWA -->
+      <div class="highlight-card">
+        <img src="./src/assets/CSWA.png" alt="CSWA Certification" />
+        <div class="highlight-content">
+          <h3>CSWA Certification</h3>
+          <p>Completed International SolidWorks CAD Design Assosiate Examination From Dassaults Systems</p>
+        </div>
+      </div>
+<!--CLOUD COMPUTING -->
+      <div class="highlight-card">
+        <img src="./src/assets/Cloud Computing.png" alt="NPTEL Course - Cloud Computing" />
+        <div class="highlight-content">
+          <h3>NPTEL - Cloud Computing</h3>
+          <p>Completed NPTEL course on Cloud Computing From </p>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="Contact">
+  <h2 class="head2">Contact Me</h2>
+  <div class="contact-box">
+    <form id="contact-form">
+      <input type="text" name="from_name" placeholder="Your Name" required>
+      <input type="email" name="from_email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="form-msg" class="status-box" style="display: none;"></div>
+  </div>
+
+  <!-- Thanks Box -->
+  <div class="thanks-box">
+    <p>Thank you for visiting my portfolio! Feel free to reach out anytime !!!!!</p>
+  </div>
+</section>
+
+
+
+
+
+  </body>
+</html>
+
+<!--POPUP-->
+<script>
+  function openPopup(index) {
+    document.getElementById(`popup${index}`).style.display = "flex";
+  }
+
+  function closePopup() {
+    const popups = document.querySelectorAll(".popup-box");
+    popups.forEach(popup => popup.style.display = "none");
+  }
+</script>
+<!--NAVIGATION SCROLL-->
+<script>
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll("header nav a");
+
+  window.addEventListener("scroll", () => {
+    let scrollY = window.pageYOffset;
+    let currentSectionId = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 150;
+      const sectionHeight = section.offsetHeight;
+
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        currentSectionId = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (currentSectionId && link.getAttribute("href").includes(currentSectionId)) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+<!--Mail -->
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const statusBox = document.getElementById("form-msg");
+
+    emailjs.sendForm("service_wuotedk", "template_6wlba2m", this)
+      .then(() => {
+        statusBox.textContent = "✅ Message sent successfully! Thanks for contacting me.";
+        statusBox.style.display = "block";
+        statusBox.style.backgroundColor = "#d4edda";
+        statusBox.style.color = "#155724";
+        this.reset();
+      }, (error) => {
+        statusBox.textContent = "❌ Failed to send message.";
+        statusBox.style.display = "block";
+        statusBox.style.backgroundColor = "#f8d7da";
+        statusBox.style.color = "#721c24";
+        console.error("EmailJS Error:", error);
+      });
+
+    // Auto hide after 5 seconds
+    setTimeout(() => {
+      statusBox.style.display = "none";
+    }, 5000);
+  });
+</script>
+

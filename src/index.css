@@ -539,6 +539,48 @@ span{
 .popup-content p {
   font-size: 1.5rem;
 }
+.popup-img {
+  width: 50%;
+  height: auto;
+  align-items:center;
+  object-fit: cover; /* keeps aspect ratio while filling */
+  border-radius: 0.5rem; /* optional, to give smooth corners */
+  display: block;
+  margin: 1rem 0; /* spacing between text */
+}
+
+/* Skills Section */
+.skills-heading {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: teal;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.skill-box {
+  background: #2a2a2a;
+  border: 1.5px solid teal;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  cursor: default;
+}
+
+.skill-box:hover {
+  background: teal;
+  color: black;
+  transform: scale(1.05);
+}
 
 
 
@@ -561,12 +603,7 @@ span{
     opacity: 1;
   }
 }
-.popup-img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
-}
+
 
 #highlights {
   padding: 2rem;

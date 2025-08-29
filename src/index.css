@@ -707,5 +707,5 @@ span{
 .content {
   position: relative;
   z-index: 1;
-  color: white; /* ensure your text is visible */
+  color: white;
 }
